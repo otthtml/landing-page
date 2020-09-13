@@ -12,6 +12,7 @@
 }
 
 header {
+    position: fixed;
     background-color: var(--sc);
     display: inline-flex;
     width: 100%;
@@ -33,6 +34,7 @@ nav a {
     height: auto;
     align-items: center;
     justify-content: center;
+    padding-top: 4rem;
 }
 
 .card {
@@ -40,24 +42,31 @@ nav a {
     width: 10rem;
     height: 10rem;
     display: inline-flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     margin: 0.5rem;
-    /* align-items: center; */
-    /* align-content: center; */
+	box-sizing: border-box;
+
 }
 
 #sobre, #contato {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 80%;
     height: auto;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     margin: 0.5rem;
+    max-width: 800px;
 }
+
+#caracteristicas {
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 form {
     display: flex;
@@ -90,7 +99,7 @@ input[type="text"], textarea, input[type="email"] {
     border-radius: 5px;
     font-size: 1rem;
     color: var(--pc);
-    width: 70%;
+    width: 100%;
 }
 
 p, h2 {
